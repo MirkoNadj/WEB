@@ -1,0 +1,38 @@
+<!-- Reset/Button/Hidden
+Create a form that contains multiple elements (text, textarea, radio)
+At the end of the form, there are two buttons:
+The first one is a reset button used for resetting form
+The second button contains an image and text inside it (it's a submit button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Input text</label><br>
+        <input type="text" name="sometxt" size="50" maxlenght="45"/><br>
+        <label>Text area</label><br>
+        <textarea name="longtxt" cols="50" rows="20">Type here...</textarea><br>
+        <label>Radio buttons</label><br>
+        <input type="radio" name="buttons" value="north"/>North
+        <input type="radio" name="buttons" value="east"/>East
+        <input type="radio" name="buttons" value="south"/>South
+        <input type="radio" name="buttons" value="west"/>West
+        <br>
+        <hr>
+        <input type="reset" value="reset">
+        <br>
+        <br>
+        <button>
+            <img src="img/submit.jpg" alt="submit-button" width="100">NOW
+        </button>
+    </form>
+    <br>
+    <br>
+</body>
+</html>
