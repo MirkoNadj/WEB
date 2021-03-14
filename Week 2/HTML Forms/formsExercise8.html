@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Personal data</legend>
+        <label>Name:
+            <input type="text" name="firstname" autofocus required>
+        </label>
+        <br>
+        <br>
+        <label>E mail:
+            <input type="email" name="e-mail" required>
+        </label>
+        <br>
+        <br>
+        <label>Phone number:
+            <input type="text" name="telephone">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Location</legend>
+        <label>City:
+            <input type="text" name="city" required>
+        </label>
+        <br>
+        <br>
+        <label>Street:
+            <input type="text" name="street" required>
+        </label>
+        <br>
+        <br>
+        <label>Street number:
+            <input type="text" name="streetnumber">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Event info></legend>
+        <select name="event">
+            <option value="Birtday">Birthday</option>
+            <option value="Wedding" selected="selected" >Wedding</option>
+            <option value="Company">Company</option>
+        </select>
+        <br>
+        <br>
+        <label>Number of quests:
+            <input type="number" name="guestsnumber" placeholder="20">
+        </label>
+    </fieldset>
+    <br>
+    <br>
+    <input type="submit" name="submit" value="SUBMIT"/>
+    <input type="reset">
+    </form>    
+</body>
+</html>
