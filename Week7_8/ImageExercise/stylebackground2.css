@@ -1,0 +1,18 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img {
+    width: 00px;
+}
+body {
+    background-image: url(./img/juicepic.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    /*background-size: cover;*/
+}
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 68px;
+    text-shadow: 3px 2px 2px #D3B13C;
+}

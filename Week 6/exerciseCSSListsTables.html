@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists and Tables</title>
+    <style>
+        .circle {
+            list-style-type:circle;
+        }
+        .square {
+            list-style-type:square;
+        }
+        .alphabet {
+            list-style-type:upper-alpha;
+        }
+        .roman {
+            list-style-type:upper-roman;
+        }
+        .image {
+            width: 200px;
+            list-style-image: url("img/checkmark.png");
+        }
+        .pic {
+            width: 200px;
+            list-style-image: url("img/12-red-star.png");
+            list-style-position: inside;
+        }
+        table {
+            margin: 10px auto;
+            border-style:solid;
+            padding: 10px 10px;
+            border-spacing: 0px;
+            
+          
+        }
+        tr:nth-child(odd) {
+            background-color: grey;
+        }
+        tr:hover {
+            background-color: yellow;
+        }
+        th {
+            color: white;
+            background-color: red;
+            padding: 10px 0px;           
+        }
+    </style>
+</head>
+<body>
+    <h1>Lists</h1>
+    <h2>Markers</h2>
+    <ul class="circle">
+        <li>First Circle Item</li>
+        <li>Second Circle Item</li>
+        <li>Third Circle Item</li>
+    </ul>
+    <br>
+    <ul class="square">
+        <li>First Square Item</li>
+        <li>Second Square Item</li>
+        <li>Third Square Item</li>
+    </ul>
+    <br>
+    <ol class="alphabet">
+        <li>First Alphabet Item</li>
+        <li>Second Alphabet Item</li>
+        <li>Third Alphabet Item</li>
+    </ol>
+    <br>
+    <ol class="roman">
+        <li>First Roman Item</li>
+        <li>Second Roman Item</li>
+        <li>Third Roman Item</li>
+    </ol>
+    <br>
+    <hr>
+    <br>
+    <h2>Image Marker/Position</h2>
+    <br>
+    <ul class="image">
+        <li>First Image Item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo purus ac enim tristique porta. Donec tortor orci, dapibus at bibendum a, laoreet molestie felis. Nunc vulputate tellus sit amet sagittis posuere. Praesent sit amet varius massa, at tincidunt purus. Suspendisse potenti. Quisque tempus feugiat orci nec vestibulum.</li>
+        <li>Second Image Item  Cras laoreet pretium iaculis. Aenean arcu magna, cursus a malesuada sed, pretium eget elit. Integer eleifend, massa id pellentesque elementum, massa leo aliquet orci, a blandit lorem purus ut odio. Aliquam non libero commodo, posuere felis et, varius sapien. Nulla egestas nisl nisl, quis cursus dui accumsan vitae. </li>
+        <li>Third Image Item Phasellus porttitor in erat sit amet condimentum. Aenean malesuada eleifend mauris nec dictum. Vestibulum ligula nisi, fermentum sit amet tincidunt nec, lacinia in mauris. Aliquam et cursus nibh, ut venenatis ante. Aliquam vitae lectus nec nunc euismod efficitur ac at dolor. Proin tempus quam et vestibulum tincidunt. Mauris sit amet ipsum eget velit consectetur placerat. Duis sit amet blandit urna. Maecenas venenatis lacus ac fermentum rutrum.</li>
+    </ul>
+    <br>
+    <ul class="pic">
+        <li>First Picture Item Ut vitae risus at ante pretium suscipit sed nec enim. Nam eget massa euismod, ullamcorper lectus quis, porta libero. Morbi in tempus turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ornare nibh bibendum eros ullamcorper tincidunt. Duis non purus pharetra, varius diam vitae, commodo mi. Maecenas ac felis lacinia, facilisis eros ut, pharetra velit. </li>
+        <li>Second Picture Item In felis erat, tincidunt id imperdiet sed, maximus vitae arcu. Vestibulum pulvinar justo elit, a ultricies ex egestas eget. Duis dapibus libero nec ex tincidunt, ac vulputate justo mattis. Donec et diam justo. Duis feugiat, neque non rutrum venenatis, mi felis rhoncus nisi, vitae varius nibh dui in quam. Vestibulum vulputate condimentum efficitur. Integer mattis diam in porttitor pretium. Nulla facilisi. Donec tincidunt varius pharetra. </li>
+        <li>Third Picture Item Suspendisse tempor ipsum at dictum bibendum. Vivamus quis rhoncus ante. Phasellus vestibulum eros vitae nulla porta, quis mollis nunc eleifend. Vestibulum hendrerit justo quis commodo dignissim. Morbi ac cursus dui. Integer hendrerit, metus dictum lobortis ultrices, leo enim porta arcu, ac ultrices diam mauris et urna. </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h2>Table</h2>
+    <br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>RAM</th>
+            <th>Camera</th>
+            <th>Internal memory</th>
+        </tr>
+        <tr>
+            <td>Redmi Note 8</td>
+            <td><img src="img/Redmi9.jpg" height="100"></td>
+            <td>6 GB</td>
+            <td>48 MP</td>
+            <td>64 GB</td></tr>
+        <tr>
+        <td>Samsung A50</td>
+            <td><img src="img/A50.jpg" height="100"></td>
+            <td>3 GB</td>
+            <td>25 MP</td>
+            <td>64 GB</td>
+        </tr>
+        <tr>
+            <td>Iphone X</td>
+            <td><img src="img/Iphone12.jpg" height="100"></td>
+            <td>4 GB</td>
+            <td>12 MP</td>
+            <td>128 GB</td>
+        </tr>
+        <tr>
+            <td>LG G6</td>
+            <td><img src="img/lg-g6-new.jpg" height="100"></td>
+            <td>6 GB</td>
+            <td>12 MP</td>
+            <td>128 GB</td>
+        </tr>
+        <tr>
+            <td>Huawei P40</td>
+            <td><img src="img/huawei-p40.jpg" height="100"></td>
+            <td>8 GB</td>
+            <td>50 MP</td>
+            <td>256 GB</td>
+        </tr>
+    </table>
+</body>
+</html>

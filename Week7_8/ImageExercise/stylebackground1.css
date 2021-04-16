@@ -1,0 +1,14 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-image: url(./img/cupcakes-2887270_640.jpg);
+    background-attachment: fixed;
+
+}
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 68px;
+    text-shadow: 3px 2px 2px #D3B13C;
+}

@@ -1,0 +1,170 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: orange;
+}
+/* ---- dropdown navigation ---- */
+.main {
+    height: 300px;
+    background-color: beige;
+    width:90%;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: gold;
+    margin-bottom: 280px;
+}
+nav ul {
+    float: left;
+    padding-left: 20px;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+.home {
+    background-color: lightgrey;
+    margin-left: 0px;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+.sub2 {
+    background-color: beige;
+}
+nav ul li:hover {
+    background-color: beige;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul {
+    padding: 0px;
+}
+nav ul li ul li {
+    width: 280px;
+}
+nav ul li ul li a {
+    padding: 8px 20px;
+}
+nav ul li ul li a:hover {
+    background-color: lightgrey;
+}
+/* ---- z index on top  ---- */
+.divz1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position:relative;
+    z-index: 1;
+}
+.divz2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position:relative;
+    z-index: 2;
+}
+.divz3 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position:relative;
+    z-index: 3;
+}
+/* ---- z index stack relative ---- */
+
+.divz4 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position:relative;
+    
+    z-index: 1;
+}
+.divz5 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position:relative;
+    left: 100px;
+    top: -100px;
+    z-index: 2;
+}
+.divz6 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position:relative;
+    left: 200px;
+    top:-200px;
+    z-index: 3;
+}
+/* ---- z index stack absolute ---- */
+.divz {
+    position:relative;
+}
+
+.divz7 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position:absolute;
+    right: 0px;
+    z-index: 3;
+}
+.divz8 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position:absolute;
+    right: 100px;
+    bottom: -300px;
+    z-index: 2;
+}
+.divz9 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position:absolute;
+    right: 200px;
+    bottom: -400px;
+    z-index: 1;
+}
+/* ---- navigation ---- */
+.float {
+    margin-top: 500px;
+}
+.navlist {
+    list-style-type: none;
+    background-color: rgb(214, 22, 22);
+    height: 40px;
+    margin: 0;
+    padding: 0;    
+}
+.navlist li {
+    float:right;   
+}
+.navlist li a {
+    display:block;
+    margin: 0px 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+.navlist li a:hover {
+    color:red;
+    background-color: white;
+}
