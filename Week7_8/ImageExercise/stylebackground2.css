@@ -8,7 +8,7 @@ body {
     background-image: url(./img/juicepic.jpg);
     background-repeat: no-repeat;
     background-position: center right;
-    /*background-size: cover;*/
+    background-size: cover;
 }
 h1 {
     color: red;
