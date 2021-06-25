@@ -1,0 +1,12 @@
+.bottom {
+	border-bottom: solid;
+	border-color: red;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+li:active {
+	color: green;
+}

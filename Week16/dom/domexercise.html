@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+        .bkg-blue {
+            background-color: blue;
+        }
+        .bkg-green {
+            background-color: green;
+        }
+        .bkg-yellowAndUpper {
+            background-color: yellow;
+            text-transform: uppercase;
+        }
+        
+        .myClass {
+            background-color: green;
+        }
+        
+        .myClass1 {
+            background-color: blue;
+        }
+        .active {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecting One/Multiple Elements</h1>
+    <ul>
+        <li>First-A</li>
+        <li>Second-A</li>
+        <li>Third-A</li>
+    </ul>
+    <ul id="select">
+        <li>First-B</li>
+        <li>Second-B</li>
+        <li>Third-B</li>
+    </ul>
+
+    <button onclick="selectListToColor()">COLORIZE ONE LIST</button>
+    <button onclick="selectAllLiToColor()">COLORIZE ALL LISTS</button>    
+
+    <ul id='last-list'>
+        <li>First-C</li>
+        <li>Second-C</li>
+        <li>Third-C</li>
+    </ul>
+
+    <button onclick="selectLiinUl()">COLORIZE LAST LIST</button> 
+
+    <h1>Traversing</h1>
+
+    <div>
+        <ul>
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li></li>
+            <li class="active">NESTO</li>
+            <li></li>
+        </ul> 
+    </div>
+    
+
+    <p id="ovde">Ovde dropdown</p>
+        
+
+    <ul id="lista">
+        <li id="prvi">prvi</li>
+        <li>drugi</li>
+        <li id='treci'>treci</li>
+    </ul>
+    <button onclick="changeText('nesto')">CHANGE</button>
+    <button onclick="changeLastText('promeniposlednji')">CHANGELAST</button>
+    <button onclick="getLi()">ALERT</button>
+    <button onclick="insertDropDown(['car', 'bike', 'plane'], 'ovde')">UBACI DROPDOWN</button>
+
+    <h1>FORM CHECK</h1>
+    <br>
+
+    <p>Text Input</p>
+        <form id="form">
+        <input id="name" type="text" name="username" size="15" max length="30" required autofocus>
+        <br>
+
+        <p>Password Input</p>
+        <input id="password" type="password" name="password" size="15" maxlength="30" required>
+        <br>
+
+        <p>E-mail Input</p>
+        <input id="email" type="email" name="someemail">
+        <br>
+
+        <p>Date Input</p>
+        <input id="date" type="date" name="somedate">
+        <br>
+
+        <p>URL input</p>
+        <input id="url" type="url" name="address">
+        <br>
+
+        <p>Search Input</p>
+        <input id="search" type="search" name="keywordsearch" placeholder="Enter keyword here...">
+        <br>
+
+        <button onclick="checkForm()">CHECK</button>
+        </form>
+        
+
+    <script src="exercise.js"></script>
+</body>
+</html>

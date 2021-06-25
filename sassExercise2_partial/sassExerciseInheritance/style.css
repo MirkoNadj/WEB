@@ -1,0 +1,17 @@
+.p1, .p2, .p3 {
+  width: 80%;
+  border: 3px solid red;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.p2 {
+  width: 620px;
+  border-color: blue;
+}
+
+.p3 {
+  width: 100%;
+  border-color: green;
+}
+/*# sourceMappingURL=style.css.map */

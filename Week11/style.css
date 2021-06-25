@@ -1,0 +1,41 @@
+.parent {
+    width: 40%;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+}
+.child1 {
+    /*height:200px;*/
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-color: gold;    
+}
+.subparent {
+    display: flex;
+    flex-direction:column-reverse;
+    flex-grow: 1;
+}
+.child2 {
+    display: flex;
+    flex-grow: 1;
+    background-color: red;
+    justify-content: left; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.child3 {
+    display: flex;
+    flex-grow: 1;
+    background-color: darkgrey;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.child4 {
+    display: flex;
+    flex-grow: 2;
+    background-color: purple;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}

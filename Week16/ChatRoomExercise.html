@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM event listener exercise</title>
+    <style>        
+        body {
+            width:50%;
+            margin:auto;
+        }
+        #screen {
+            height:500px;
+            border-style: solid;
+            border-color: black;   
+            margin-bottom: 10px;         
+        }
+        #message {
+            width: 70%;
+            height: 45px;
+        }
+        #submit {
+            color: white;
+            background-color: red;
+            border-color: red;
+            border-radius: 5px;
+            height: 40px;
+            width:28%;
+        }
+    </style>
+</head>
+<body>
+    <ul id="lista">
+        <li id="prvi">prvi</li>
+        <li>drugi</li>
+        <li id='treci'>treci</li>
+    </ul>
+    
+        <div >
+        <p id='screen'></p>
+    </div>
+    
+        <input id="message" name="message-input">
+        <button onclick="insertMessage()" id="submit">Send</button>
+        
+    
+     <button onclick="changeText('nesto')">CHANGE</button>
+    <script src="chat.js"></script>
+</body>
+</html>

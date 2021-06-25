@@ -1,0 +1,16 @@
+.p1 {
+    width: 100%-20;
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: aqua;
+};
+.p2 {
+    @extend .p1;
+    width: 550px + 70px;
+    border-color: blue;
+};
+.p3 {
+    @extend .p1;
+    width: 50% * 2;
+    border-color: green;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM event listener exercise</title>
+    <style>
+        div {
+            
+            height: 500px;
+        }
+        .bkgblue {
+            background-color: blue;
+        }
+        .bkggreen {
+            background-color: green;
+        }
+        #toggle-button {
+            width: 200px;
+            height: 50px;
+            color: white;
+            background-color: red;
+            border-color: red;
+            border-radius: 5px;
+            margin-top: 30px;            
+        }
+        #toggle-button-auto {
+            width: 200px;
+            height: 50px;
+            color: white;
+            background-color: red;
+            border-color: red;
+            border-radius: 5px;
+            margin-top: 30px;            
+        }
+        .button {            
+            text-align:center;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="background-div" class="bkgblue">
+        <div class="button">
+            <button id="toggle-button" onclick="changeBackgroundColor()">Toggle Background</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="background-div2" class="bkgblue">
+        <div class="button">
+            <button id="toggle-button-auto" onclick="automaticToggleColor()">Automatic Toggle Background</button>
+        <div class="button">
+            <button id="switch" onclick="switchAutoToggle()">Turn Off</button>
+        </div>
+    </div>
+    <script src="eventListener.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import 'variable';
+@import 'mixins';
+
+
+
+
+body {
+    font: 100% $font-stack;
+    color:$primary-color;
+    background: $secondary-color;
+}
+
+.container {
+    width: 80%-20%;
+    margin: auto;
+    text-align: center;
+    color: $terciary-color;
+}
+
+.title {
+    @include textmix;
+}
+
+img {
+    @include boxmix;
+}
+
+table {
+    td {
+        color: red;
+    }
+    tr {
+        background-color: yellow;
+    }
+}
+
+

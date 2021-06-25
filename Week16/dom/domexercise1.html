@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+        
+        .myClass {
+            background-color: green;
+        }
+        
+        .myClass1 {
+            background-color: blue;
+        }
+        .active {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Mau</li>
+        <li>Mau1</li>
+        <li>Mau2</li>
+    </ul>
+    <ul id="mau">
+        <li>Maumau</li>
+        <li>Mau1mau</li>
+        <li>Mau2mau</li>
+    </ul>
+
+    <ul id='nav_1'>
+        <li>t1</li>
+        <li>t2</li>
+        <li>t3</li>
+    </ul>
+
+    <h1>TRAVERSING</h1>
+
+    <div>
+        <ul>
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li></li>
+            <li class="active">NESTO</li>
+            <li></li>
+        </ul> 
+    </div>
+    
+    <script src="exercise1.js"></script>
+</body>
+
+</html>
+
+
+var mau = {
+    hgh: "2",
+    names: "da"
+}
+var mau1 = {
+    hgh: "jd",
+    names: "co"
+}
+var mau2 = {
+    hgh: "jdf",
+    names: "da"
+}
+var mau3 = {
+    hgh: "jd",
+    names: "bla"
+}
+function findOcc(arr) {
+    var newArr = [];
+    arr.forEach(function(el) {
+        newArr.push(el.names);
+    });
+    var counts = {};
+    newArr.forEach(function(el) {
+        counts[el] = (counts[el] || 0) + 1;
+    });
+    return counts;
+}
+console.log(findOcc([mau, mau1, mau2, mau3]))
