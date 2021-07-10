@@ -1,0 +1,64 @@
+header {
+    position: relative;
+    }
+nav {
+    background-color: rgb(31, 31, 53)
+}
+a {
+    font-weight: 900;
+}
+.cardHolder {
+    margin: auto;
+}
+.searchList {
+    background-color: rgb(209, 233, 250);
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    z-index: 1;
+    list-style: none;
+    padding: 0px 10px
+}
+
+ ul {
+     border-radius: 5px;
+     border: 1px solid black;
+     width: 210px;
+    
+ }
+
+ul li {
+    border-bottom: 1px solid black;
+    text-align: left;
+    text-overflow: clip;
+    margin-bottom: 5px;
+}
+
+ul li:hover {
+    background-color: rgb(167, 221, 247);
+    cursor: pointer;
+}
+
+ul li:active {
+    background-color: rgb(88, 186, 252);
+}
+
+.hTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(40, 40, 65);
+    margin: 20px 0px;
+}
+
+.card-title {
+    color: rgb(32, 32, 97);
+    font-weight: bold;
+}
+.card:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+footer {
+    height: 50px;
+    padding: 10px;
+}

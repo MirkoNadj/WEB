@@ -1,0 +1,70 @@
+header {
+  position: relative;
+}
+
+nav {
+  background-color: #1f1f35;
+}
+
+a {
+  font-weight: 900;
+}
+
+.cardHolder {
+  margin: auto;
+}
+
+.searchList {
+  background-color: #d1e9fa;
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  z-index: 1;
+  list-style: none;
+  padding: 0px 10px;
+}
+
+ul {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 210px;
+}
+
+ul li {
+  border-bottom: 1px solid black;
+  text-align: left;
+  text-overflow: clip;
+  margin-bottom: 5px;
+}
+
+ul li:hover {
+  background-color: #a7ddf7;
+  cursor: pointer;
+}
+
+ul li:active {
+  background-color: #58bafc;
+}
+
+.hTitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: #282841;
+  margin: 20px 0px;
+}
+
+.card-title {
+  color: #202061;
+  font-weight: bold;
+}
+
+.card:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+footer {
+  height: 50px;
+  padding: 10px;
+}
+/*# sourceMappingURL=styleS.css.map */
